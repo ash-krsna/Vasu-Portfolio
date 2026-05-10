@@ -93,7 +93,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, delay: 0.2 }}
         >
-          <span className="eyebrow">BCA Final Year | Ahmednagar</span>
+          <span className="eyebrow">BCA Final Year | Ahilyanagar</span>
           <h1>Hello, I&apos;m Payal Dhage</h1>
           <h2>Transforming Data into Smart Decisions</h2>
           <TypingText />
