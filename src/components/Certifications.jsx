@@ -20,7 +20,17 @@ export default function Certifications() {
             >
               <i className={`bi ${cert.icon}`}></i>
               <h3>{cert.title}</h3>
-              <span>Verified learning milestone</span>
+              <span>{cert.issuer}</span>
+              <div className="cert-actions">
+                <a href={cert.file} target="_blank" rel="noreferrer">
+                  <i className="bi bi-eye"></i>
+                  View
+                </a>
+                <a href={cert.file} download>
+                  <i className="bi bi-download"></i>
+                  Download
+                </a>
+              </div>
             </motion.div>
           ))}
         </div>

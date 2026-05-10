@@ -73,10 +73,60 @@ export const projects = [
 ];
 
 export const certifications = [
-  { title: "Deloitte Data Analytics Job Simulation", icon: "bi-patch-check" },
-  { title: "Introduction to Accenture Job Simulation", icon: "bi-award" },
-  { title: "Power BI Micro Course", icon: "bi-mortarboard" },
-  { title: "Data Analytics Masterclass", icon: "bi-patch-check" },
+  {
+    title: "Deloitte Data Analytics Job Simulation",
+    issuer: "Deloitte",
+    icon: "bi-patch-check",
+    file: "/certificates/deloitte-data-analytics-job-simulation.pdf",
+  },
+  {
+    title: "Introduction to Accenture Job Simulation",
+    issuer: "Accenture",
+    icon: "bi-award",
+    file: "/certificates/accenture-job-simulation.pdf",
+  },
+  {
+    title: "Data Analyst - Big 4 Ready",
+    issuer: "Data Analytics Program",
+    icon: "bi-mortarboard",
+    file: "/certificates/data-analyst-big-4-ready.pdf",
+  },
+  {
+    title: "Power BI Micro Course",
+    issuer: "Power BI Learning",
+    icon: "bi-bar-chart-line",
+    file: "/certificates/power-bi-micro-course.pdf",
+  },
+  {
+    title: "Python Certificate",
+    issuer: "Python Learning",
+    icon: "bi-code-slash",
+    file: "/certificates/python-certificate.pdf",
+  },
+  {
+    title: "JavaScript Certificate",
+    issuer: "Web Development",
+    icon: "bi-braces",
+    file: "/certificates/javascript-certificate.pdf",
+  },
+  {
+    title: "AICTE Certificate",
+    issuer: "AICTE",
+    icon: "bi-building-check",
+    file: "/certificates/aicte-certificate.pdf",
+  },
+  {
+    title: "Participation Certificate",
+    issuer: "Payal Dhage",
+    icon: "bi-patch-check",
+    file: "/certificates/participation-certificate.pdf",
+  },
+  {
+    title: "HCL Certificate",
+    issuer: "HCL",
+    icon: "bi-award",
+    file: "/certificates/hcl-certificate.jpeg",
+  },
 ];
 
 export const testimonials = [

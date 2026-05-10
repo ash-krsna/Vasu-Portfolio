@@ -489,6 +489,8 @@ a { color: inherit; text-decoration: none; }
   padding: 26px;
   border-radius: 24px;
   transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
 }
 .cert-card i {
   display: inline-grid;
@@ -502,6 +504,25 @@ a { color: inherit; text-decoration: none; }
   font-size: 1.7rem;
 }
 .cert-card span, .testimonial-card p { color: var(--muted); font-weight: 700; }
+.cert-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+.cert-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 11px;
+  border-radius: 12px;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  color: var(--text);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
 
 .testimonial-card {
   height: 100%;
