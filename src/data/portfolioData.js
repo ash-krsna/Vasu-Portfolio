@@ -3,8 +3,10 @@ export const personal = {
   email: "payaldhage1011@gmail.com",
   linkedIn: "https://www.linkedin.com/in/payal-dhage",
   location: "Ahmednagar, Maharashtra, India",
-  role: "Aspiring Data Analyst | Excel • SQL • Python • Power BI • Tableau",
+  role: "Aspiring Data Analyst | Excel | SQL | Python | Power BI | Tableau",
   education: "BCA Final Year",
+  profileImage: "/assets/payal-profile.png",
+  resume: "/Payal-Dhage-Resume.pdf",
 };
 
 export const typingRoles = [

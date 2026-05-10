@@ -93,14 +93,14 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, delay: 0.2 }}
         >
-          <span className="eyebrow">BCA Final Year • Ahmednagar</span>
+          <span className="eyebrow">BCA Final Year | Ahmednagar</span>
           <h1>Hello, I&apos;m Payal Dhage</h1>
           <h2>Transforming Data into Smart Decisions</h2>
           <TypingText />
           <p>{personal.role}</p>
           <div className="hero-actions">
             <a className="btn btn-primary-soft" href="#projects"><i className="bi bi-grid"></i>View Projects</a>
-            <a className="btn btn-outline-soft" href="/Payal-Dhage-Resume.pdf" download><i className="bi bi-download"></i>Download Resume</a>
+            <a className="btn btn-outline-soft" href={personal.resume} download><i className="bi bi-download"></i>Download Resume</a>
             <a className="btn btn-outline-soft" href="#contact"><i className="bi bi-envelope"></i>Contact Me</a>
             <a className="btn btn-gold" href={`mailto:${personal.email}`}><i className="bi bi-briefcase"></i>Hire Me</a>
           </div>

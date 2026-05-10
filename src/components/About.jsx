@@ -15,7 +15,7 @@ export default function About() {
               transition={{ type: "spring", stiffness: 150 }}
             >
               <div className="profile-avatar">
-                <i className="bi bi-person-workspace"></i>
+                <img src={personal.profileImage} alt="Payal Dhage" />
               </div>
               <div className="profile-badge">
                 <i className="bi bi-geo-alt"></i>

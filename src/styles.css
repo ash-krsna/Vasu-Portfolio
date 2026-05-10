@@ -346,9 +346,21 @@ a { color: inherit; text-decoration: none; }
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.62);
-  color: #9b5edb;
-  font-size: 6rem;
+  padding: 8px;
+  background:
+    linear-gradient(var(--surface-strong), var(--surface-strong)) padding-box,
+    linear-gradient(135deg, var(--pink), var(--lavender), var(--sky), var(--gold)) border-box;
+  border: 2px solid transparent;
+  box-shadow: 0 24px 60px rgba(118, 82, 166, 0.22);
+  overflow: hidden;
+}
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 }
 .profile-badge {
   position: absolute;

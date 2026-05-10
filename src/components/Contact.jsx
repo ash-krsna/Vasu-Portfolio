@@ -50,7 +50,7 @@ export default function Contact() {
               </label>
               <div className="form-actions">
                 <button className="btn btn-primary-soft" type="submit"><i className="bi bi-send"></i>Send Message</button>
-                <a className="btn btn-outline-soft" href="/Payal-Dhage-Resume.pdf" download><i className="bi bi-download"></i>Download Resume</a>
+                <a className="btn btn-outline-soft" href={personal.resume} download><i className="bi bi-download"></i>Download Resume</a>
                 <a className="btn btn-gold" href={`mailto:${personal.email}`}><i className="bi bi-briefcase"></i>Hire Me</a>
               </div>
               {status && <p className="form-status">{status}</p>}
