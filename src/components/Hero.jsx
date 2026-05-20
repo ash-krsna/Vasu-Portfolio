@@ -93,9 +93,16 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, delay: 0.2 }}
         >
-          <span className="eyebrow">BCA Final Year | Ahilyanagar</span>
-          <h1>Hello, I&apos;m Payal Dhage</h1>
-          <h2>Transforming Data into Smart Decisions</h2>
+          <div className="hero-meta-row">
+            <span className="eyebrow">Portfolio 2026</span>
+            <span><i className="bi bi-geo-alt"></i> Based in Ahilyanagar</span>
+            <span><i className="bi bi-circle-fill"></i> Open to analyst roles</span>
+          </div>
+          <h1>
+            Data
+            <span>Analyst</span>
+          </h1>
+          <h2>Payal Dhage transforms raw data into smart decisions.</h2>
           <TypingText />
           <p>{personal.role}</p>
           <div className="hero-actions">
@@ -105,7 +112,16 @@ export default function Hero() {
             <a className="btn btn-gold" href={`mailto:${personal.email}`}><i className="bi bi-briefcase"></i>Hire Me</a>
           </div>
         </motion.div>
-        <DashboardVisual />
+        <div className="hero-showcase">
+          <div className="showcase-label">
+            <span>Excel</span>
+            <span>SQL</span>
+            <span>Python</span>
+            <span>Power BI</span>
+            <span>Tableau</span>
+          </div>
+          <DashboardVisual />
+        </div>
       </div>
     </section>
   );
