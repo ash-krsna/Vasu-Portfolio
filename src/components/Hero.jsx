@@ -113,6 +113,17 @@ export default function Hero() {
           </div>
         </motion.div>
         <div className="hero-showcase">
+          <motion.div
+            className="hero-portrait-card"
+            animate={{ y: [0, -10, 0] }}
+            transition={{ duration: 5.4, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <img src={personal.profileImage} alt="Payal Dhage" />
+            <div>
+              <strong>Payal Dhage</strong>
+              <span>BCA Final Year</span>
+            </div>
+          </motion.div>
           <div className="showcase-label">
             <span>Excel</span>
             <span>SQL</span>

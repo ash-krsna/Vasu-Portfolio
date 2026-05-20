@@ -2,7 +2,7 @@ export const personal = {
   name: "Payal Dhage",
   email: "payaldhage1011@gmail.com",
   linkedIn: "https://www.linkedin.com/in/payal-dhage",
-  location: "Ahmednagar, Maharashtra, India",
+  location: "Ahilyanagar, Maharashtra, India",
   role: "Aspiring Data Analyst | Excel | SQL | Python | Power BI | Tableau",
   education: "BCA Final Year",
   profileImage: "/assets/payal-profile.png",
