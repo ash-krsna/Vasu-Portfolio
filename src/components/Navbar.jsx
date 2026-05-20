@@ -25,7 +25,10 @@ export default function Navbar({ sections, theme, onThemeToggle }) {
     <nav className="navbar navbar-expand-lg fixed-top premium-nav">
       <div className="container">
         <Link className="navbar-brand" to="home" smooth duration={500}>
-          <span>PD</span> Payal Dhage
+          <span className="brand-mark">
+            <img src="/favicon.png" alt="Payal Dhage logo" />
+          </span>
+          Payal Dhage
         </Link>
         <div className="d-flex align-items-center gap-2 order-lg-2">
           <button className="icon-btn" type="button" aria-label="Toggle theme" onClick={onThemeToggle}>

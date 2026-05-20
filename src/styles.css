@@ -136,6 +136,21 @@ a { color: inherit; text-decoration: none; }
   background: linear-gradient(135deg, var(--lavender), var(--pink));
   color: #fff;
 }
+.brand-mark {
+  padding: 6px;
+  background:
+    linear-gradient(var(--surface-strong), var(--surface-strong)) padding-box,
+    linear-gradient(135deg, var(--lavender), var(--pink), var(--sky)) border-box !important;
+  border: 1px solid transparent;
+  box-shadow: 0 10px 28px rgba(159, 122, 234, 0.22);
+  overflow: hidden;
+}
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
 .nav-link {
   margin: 0 2px;
   color: var(--muted);
