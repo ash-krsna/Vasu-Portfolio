@@ -4,6 +4,11 @@ import { Link } from "react-scroll";
 export default function Navbar({ sections, theme, onThemeToggle }) {
   const [active, setActive] = useState("home");
   const [open, setOpen] = useState(false);
+  const labels = {
+    highlights: "profile",
+    certifications: "certs",
+    testimonials: "reviews",
+  };
 
   useEffect(() => {
     const observers = sections.map((section) => {
@@ -55,7 +60,7 @@ export default function Navbar({ sections, theme, onThemeToggle }) {
                   offset={-72}
                   onClick={() => setOpen(false)}
                 >
-                  {section}
+                  {labels[section] || section}
                 </Link>
               </li>
             ))}

@@ -29,9 +29,10 @@ export default function Contact() {
             <div className="contact-panel reveal-up">
               <h3>Hire-ready data analyst</h3>
               <p>{personal.role}</p>
+              <a href={personal.resume} download><i className="bi bi-file-earmark-person"></i>Updated Resume</a>
               <a href={personal.linkedIn} target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i>LinkedIn</a>
               <a href={`mailto:${personal.email}`}><i className="bi bi-envelope-fill"></i>{personal.email}</a>
-              <a href="https://github.com/" target="_blank" rel="noreferrer"><i className="bi bi-github"></i>GitHub</a>
+              <a href="#about"><i className="bi bi-geo-alt-fill"></i>{personal.location}</a>
             </div>
           </div>
           <div className="col-lg-7">

@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import About from "./components/About.jsx";
+import Highlights from "./components/Highlights.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
 import Certifications from "./components/Certifications.jsx";
@@ -23,7 +24,7 @@ export default function App() {
   const scaleX = useSpring(scrollYProgress, { stiffness: 120, damping: 30 });
 
   const sections = useMemo(
-    () => ["home", "about", "skills", "projects", "certifications", "testimonials", "contact"],
+    () => ["home", "about", "highlights", "skills", "projects", "certifications", "testimonials", "contact"],
     []
   );
 
@@ -92,6 +93,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <Highlights />
         <Skills />
         <Projects />
         <Certifications />

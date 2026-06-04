@@ -18,10 +18,33 @@ export const typingRoles = [
 ];
 
 export const stats = [
-  { label: "Certifications", value: "4+", icon: "bi-award" },
-  { label: "Tools", value: "5+", icon: "bi-tools" },
-  { label: "Future Ready", value: "100%", icon: "bi-rocket" },
-  { label: "Continuous Learner", value: "Always", icon: "bi-book" },
+  { label: "Certifications", value: "9+", icon: "bi-award" },
+  { label: "Tools", value: "6+", icon: "bi-tools" },
+  { label: "Projects", value: "6", icon: "bi-kanban" },
+  { label: "Job Ready", value: "2026", icon: "bi-rocket" },
+];
+
+export const highlights = [
+  {
+    title: "Recruiter-ready profile",
+    detail: "Clear resume, verified certificates, and a focused data analyst portfolio.",
+    icon: "bi-person-check",
+  },
+  {
+    title: "Business-first dashboards",
+    detail: "Builds reports around KPIs, trends, filters, and decision-ready summaries.",
+    icon: "bi-speedometer2",
+  },
+  {
+    title: "Clean analysis workflow",
+    detail: "Comfortable with cleaning, querying, visualizing, and presenting data stories.",
+    icon: "bi-diagram-3",
+  },
+  {
+    title: "Based in Ahilyanagar",
+    detail: "Open to internships, fresher analyst roles, and dashboard/reporting work.",
+    icon: "bi-geo-alt",
+  },
 ];
 
 export const skills = [
