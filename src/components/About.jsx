@@ -24,7 +24,7 @@ export default function About() {
             </motion.div>
           </div>
           <div className="col-lg-7">
-            <div className="glass-panel about-copy reveal-up">
+            <div className="about-copy reveal-up">
               <h3>{personal.name}</h3>
               <p>
                 I am a passionate BCA Final Year student focused on Data Analytics. I enjoy

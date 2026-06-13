@@ -1,6 +1,41 @@
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader.jsx";
-import { projects } from "../data/portfolioData.js";
+import { personal, projects } from "../data/portfolioData.js";
+
+const previewBars = [
+  [58, 82, 66, 92, 74],
+  [74, 52, 86, 68, 94],
+  [48, 72, 88, 62, 78],
+  [86, 64, 54, 76, 92],
+  [54, 68, 92, 74, 84],
+  [78, 58, 88, 70, 96],
+];
+
+const previewAccents = ["#2364aa", "#0f766e", "#d65745", "#7c3aed", "#b7791f", "#be185d"];
+
+function ProjectPreview({ index }) {
+  const bars = previewBars[index % previewBars.length];
+
+  return (
+    <div className="project-preview" style={{ "--project-accent": previewAccents[index % previewAccents.length] }}>
+      <div className="preview-toolbar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div className="preview-kpis">
+        <span></span>
+        <span></span>
+      </div>
+      <div className="preview-bars">
+        {bars.map((height, barIndex) => (
+          <span key={`${height}-${barIndex}`} style={{ height: `${height}%` }}></span>
+        ))}
+      </div>
+      <div className="preview-line"></div>
+    </div>
+  );
+}
 
 export default function Projects() {
   return (
@@ -19,9 +54,7 @@ export default function Projects() {
               transition={{ delay: index * 0.06 }}
             >
               <div className="project-index">{String(index + 1).padStart(2, "0")}</div>
-              <div className="project-preview" style={{ background: project.image }}>
-                <i className="bi bi-kanban"></i>
-              </div>
+              <ProjectPreview index={index} />
               <div className="project-body">
                 <div className="project-meta">
                   <span>{project.year}</span>
@@ -34,8 +67,8 @@ export default function Projects() {
                 </div>
               </div>
               <div className="project-actions">
-                <a href="#" className="mini-btn"><i className="bi bi-eye"></i>Live Demo</a>
-                <a href="#" className="mini-btn"><i className="bi bi-github"></i>GitHub</a>
+                <a href="#contact" className="mini-btn"><i className="bi bi-chat-dots"></i>Discuss</a>
+                <a href={personal.resume} className="mini-btn" download><i className="bi bi-download"></i>Resume</a>
               </div>
             </motion.article>
           ))}

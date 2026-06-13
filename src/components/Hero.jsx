@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
-import { typingRoles, personal } from "../data/portfolioData.js";
+import { typingRoles, personal, stats } from "../data/portfolioData.js";
 
 function TypingText() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -47,7 +47,10 @@ function DashboardVisual() {
     >
       <motion.div className="glass-panel main-dashboard" animate={{ y: [0, -14, 0] }} transition={{ duration: 5, repeat: Infinity }}>
         <div className="dash-head">
-          <span>Analytics Pulse</span>
+          <div>
+            <span>Portfolio Snapshot</span>
+            <small>Recruiter view</small>
+          </div>
           <i className="bi bi-stars"></i>
         </div>
         <div className="kpi-row">
@@ -94,34 +97,43 @@ export default function Hero() {
           transition={{ duration: 0.75, delay: 0.2 }}
         >
           <div className="hero-meta-row">
-            <span className="eyebrow">Portfolio 2026</span>
+            <span className="eyebrow">Data Analytics Portfolio 2026</span>
             <span><i className="bi bi-geo-alt"></i> Based in Ahilyanagar</span>
             <span><i className="bi bi-circle-fill"></i> Open to analyst roles</span>
           </div>
-          <h1>
-            Data
-            <span>Analyst</span>
-          </h1>
-          <h2>Payal Dhage transforms raw data into smart decisions.</h2>
+          <h1>{personal.name}</h1>
+          <h2>Entry-level data analyst building dashboards, clean reports, and business-ready insights.</h2>
           <TypingText />
-          <p>{personal.role}</p>
+          <p className="hero-description">{personal.role}</p>
           <div className="hero-actions">
             <a className="btn btn-primary-soft" href="#projects"><i className="bi bi-grid"></i>View Projects</a>
             <a className="btn btn-outline-soft" href={personal.resume} download><i className="bi bi-download"></i>Download Resume</a>
             <a className="btn btn-outline-soft" href="#contact"><i className="bi bi-envelope"></i>Contact Me</a>
             <a className="btn btn-gold" href={`mailto:${personal.email}`}><i className="bi bi-briefcase"></i>Hire Me</a>
           </div>
+          <div className="hero-proof-grid" aria-label="Portfolio highlights">
+            {stats.slice(0, 3).map((item) => (
+              <div className="hero-proof-item" key={item.label}>
+                <i className={`bi ${item.icon}`}></i>
+                <strong>{item.value}</strong>
+                <span>{item.label}</span>
+              </div>
+            ))}
+          </div>
         </motion.div>
-        <div className="hero-showcase">
+        <div className="hero-visual">
           <motion.div
-            className="hero-portrait-card"
+            className="profile-card"
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 5.4, repeat: Infinity, ease: "easeInOut" }}
           >
             <img src={personal.profileImage} alt="Payal Dhage" />
-            <div>
-              <strong>Payal Dhage</strong>
-              <span>BCA Final Year</span>
+            <div className="profile-card-copy">
+              <div>
+                <strong>{personal.name}</strong>
+                <span>{personal.education}</span>
+              </div>
+              <i className="bi bi-patch-check-fill"></i>
             </div>
           </motion.div>
           <div className="showcase-label">

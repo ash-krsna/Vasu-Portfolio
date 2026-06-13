@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function SectionHeader({ eyebrow, title, align = "center" }) {
+export default function SectionHeader({ eyebrow, title, align = "start" }) {
   return (
     <motion.div
       className={`section-header text-${align} reveal-up`}
