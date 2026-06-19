@@ -11,7 +11,7 @@ const previewBars = [
   [78, 58, 88, 70, 96],
 ];
 
-const previewAccents = ["#2364aa", "#0f766e", "#d65745", "#7c3aed", "#b7791f", "#be185d"];
+const previewAccents = ["#0e7c66", "#334bd3", "#e15745", "#d29b2d", "#7a4cc2", "#c43a6d"];
 
 function ProjectPreview({ index }) {
   const bars = previewBars[index % previewBars.length];
